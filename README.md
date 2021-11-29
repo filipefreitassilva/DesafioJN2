@@ -7,25 +7,37 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Instalação
+## Instalaï¿½ï¿½o
 
-Para facilitar a configuração do Docker no projeto, utilizei o ambiente do Laradock, onde facilita a configuração do banco e dos containers.
+Para facilitar a configuraï¿½ï¿½o do Docker no projeto, utilizei o ambiente do Laradock, onde facilita a configuraï¿½ï¿½o do banco e dos containers.
 
-1º Passo - Entrar na pasta do Laradock
+1ï¿½ Passo - Clonar o ambiente do laradock
+
+```bash
+git clone https://github.com/Laradock/laradock.git
+```
+
+2ï¿½ Passo - Copiar o arquivo ".env.laradock" da raiz para a pasta do Laradock
+
+```bash
+renomear de ".env.laradock" para ".env"
+```
+
+3ï¿½ Passo - Entrar na pasta do Laradock
 
 ```bash
 cd laradock
 ```
 
-2º Passo - Dentro da pasta do Laradock:
+4ï¿½ Passo - Dentro da pasta do Laradock:
 Subir os containers do Docker
 
 ```bash
-docker-compose up -d nginx mysql phpmyadmin
+docker-compose up -d nginx mysql phpmyadmin workspace
 docker-compose exec --user=laradock workspace bash
 ```
 
-3º Passo - Executar as migrations do banco de dados
+5ï¿½ Passo - Executar as migrations do banco de dados
 
 ```bash
 php artisan migrate
