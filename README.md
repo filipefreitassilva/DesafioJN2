@@ -11,7 +11,7 @@
 
 Para facilitar a configuração do Docker no projeto, utilizei o ambiente do Laradock, onde facilita a configuração do banco e dos containers.
 
-1º Passo - Clonar o ambiente do laradock
+1º Passo - Clonar o ambiente do laradock na raiz do projeto
 
 ```bash
 git clone https://github.com/Laradock/laradock.git
